@@ -6,8 +6,9 @@ Além disso, utiliza:
 - Dependências do requirements.txt
 
 ## Como rodar o site:
-
+Primeiro, abra um terminal. 
 ### Instalando arquivos
+Vá para um diretório de escola
 Clonar o repositório com git clone. Abra o terminal e vá para um diretório de escolha. 
 ```bash
 git clone https://github.com/Datto6/EDA_Dados_Abertos.git 
@@ -20,7 +21,6 @@ sudo apt update
 sudo apt install redis-server
 sudo systemctl enable redis
 sudo systemctl enable redis-server
-
 ```
 
 Instale as dependências Python:
