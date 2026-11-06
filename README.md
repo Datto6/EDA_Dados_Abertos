@@ -14,11 +14,13 @@ git clone https://github.com/Datto6/EDA_Dados_Abertos.git
 cd EDA_Dados_Abertos
 ```
 ### Dependências
-
+Primeiro, fazer a instalação do redis, e habilitá-lo
 ```bash
 sudo apt update
 sudo apt install redis-server
-sudo systemctl start redis
+sudo systemctl enable redis
+sudo systemctl enable redis-server
+
 ```
 
 Instale as dependências Python:
@@ -33,7 +35,8 @@ pip install -r requirements.txt
 Primeiramente, inicie o Redis:
 
 ```bash
-sudo service redis-server start
+sudo systemctl start redis
+sudo systemctl start redis-server
 ```
 
 Em um terminal, execute o worker do Celery:
