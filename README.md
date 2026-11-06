@@ -22,8 +22,10 @@ sudo systemctl start redis
 ```
 
 Instale as dependências Python:
-
+(Criando ambiente virtual e instalando módulos)
 ```bash
+python3.12 -m venv .venv 
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 ### Comandos
