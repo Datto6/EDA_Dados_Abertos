@@ -1,15 +1,16 @@
-## Como rodar o site:
-### Instalando arquivos
-Clonar o repositório com git clone.
-```bash
-cd repositorio/de/escolha
-git clone https://github.com/Datto6/EDA_Dados_Abertos.git 
-```
-### Dependências
+## Pré Requisitos
 Esse site foi concebido na versão Linux Ubuntu versão 24.04 e  testando tanto na versão 24.04 como 22.04.
 Esta aplicação utiliza o **Redis** como Message Broker e Result Backend para gerenciar as tarefas assíncronas do Celery.
 
-**Linux (Ubuntu/Debian/WSL):**
+## Como rodar o site:
+
+### Instalando arquivos
+Clonar o repositório com git clone. Abra o terminal e vá para um diretório de escolha. 
+```bash
+git clone https://github.com/Datto6/EDA_Dados_Abertos.git 
+cd EDA_Dados_Abertos
+```
+### Dependências
 
 ```bash
 sudo apt update
