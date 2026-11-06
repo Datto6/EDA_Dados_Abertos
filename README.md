@@ -1,5 +1,6 @@
 ## Como rodar o site:
-
+### Instalando arquivos
+Clonar o repositório com git clone. 
 ### Dependências
 
 Esta aplicação utiliza o **Redis** como Message Broker e Result Backend para gerenciar as tarefas assíncronas do Celery.
@@ -28,7 +29,7 @@ sudo service redis-server start
 Em um terminal, execute o worker do Celery:
 
 ```bash
-celery -A main.celery worker --loglevel=info
+celery -A app.celery worker --loglevel=info
 ```
 
 Em seguida, em outro terminal, execute a aplicação Flask:
@@ -48,6 +49,5 @@ http://127.0.0.1:5000
 - O terminal do Celery exibe os logs e possíveis erros durante o processamento.
 - Certifique-se de que o Redis está ativo antes de iniciar o worker.
 - Os gráficos são armazenados em `static/exports/`, separados por identificador de execução (UUID).
-- Caso utilize outro nome para o arquivo principal, substitua `app` no comando do Celery pelo nome correspondente.
 - Os arquivos .csv iniciais e os agregados são mantidos no ./arquivos_default
 - Feito o download de um dia, o mesmo arquivo não é processado duas vezes, mas a construção de gráficos é sempre do 0.  
