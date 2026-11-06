@@ -28,13 +28,13 @@ sudo service redis-server start
 Em um terminal, execute o worker do Celery:
 
 ```bash
-celery -A app.celery worker --loglevel=info
+celery -A main.celery worker --loglevel=info
 ```
 
 Em seguida, em outro terminal, execute a aplicação Flask:
 
 ```bash
-python3 app.py
+python3 main.py
 ```
 
 Acesse o site pelo navegador:
