@@ -1,8 +1,12 @@
 ## Como rodar o site:
 ### Instalando arquivos
-Clonar o repositório com git clone. 
+Clonar o repositório com git clone.
+```bash
+cd repositorio/de/escolha
+git clone https://github.com/Datto6/EDA_Dados_Abertos.git 
+```
 ### Dependências
-
+Esse site foi concebido na versão Linux Ubuntu versão 24.04 e  testando tanto na versão 24.04 como 22.04.
 Esta aplicação utiliza o **Redis** como Message Broker e Result Backend para gerenciar as tarefas assíncronas do Celery.
 
 **Linux (Ubuntu/Debian/WSL):**
@@ -29,7 +33,7 @@ sudo service redis-server start
 Em um terminal, execute o worker do Celery:
 
 ```bash
-celery -A app.celery worker --loglevel=info
+celery -A main.celery worker --loglevel=info
 ```
 
 Em seguida, em outro terminal, execute a aplicação Flask:
