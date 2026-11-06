@@ -1,6 +1,9 @@
 ## Pré Requisitos
-Esse site foi concebido na versão Linux Ubuntu versão 24.04 e  testando tanto na versão 24.04 como 22.04.
-Esta aplicação utiliza o **Redis** como Message Broker e Result Backend para gerenciar as tarefas assíncronas do Celery.
+Esse site foi testado nas versões Linux Ubuntu 24.04 e 22.04.
+Além disso, utiliza:
+- Python 3.12.3
+- Redis
+- Dependências do requirements.txt
 
 ## Como rodar o site:
 
